@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+:root {
+  --font-family: "Poppins";
+  --subcolor: #5bb6fd;
+  --maincolor: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--maincolor);
+  font-family: var(--font-family), serif;
+  position: relative;
+  overflow-x: hidden;
+}
+nav {
+  position: fixed;
+  background-color: var(--maincolor);
+  z-index: 1;
+}
+#navbarSupportedContent {
+  width: 100%;
+  background-color: var(--maincolor);
+}
+.nav-image > a {
+  display: inline-block;
+  width: 50%;
+}
+.nav-image > a > img {
+  width: 100%;
+  object-fit: cover;
+}
+.quoteBtn {
+  background-color: var(--subcolor);
+  border: none;
+  color: var(--maincolor);
+  padding: 8px;
+  border-radius: 50px;
+  font-size: 12px;
+}
+header {
+  background-image: url("../images/header.jpg");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+header h1 {
+  color: var(--maincolor);
+  font-weight: 600;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+.heading h1 {
+  text-align: center;
+}
+section {
+  margin: 60px 0px;
+  padding: 0 100px;
+  overflow-x: hidden;
+}
+section:nth-child(4) {
+  margin-bottom: 0px;
+}
+section h2 {
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+section h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: var(--subcolor);
+  bottom: -5px;
+  left: 48%;
+}
+.aboutusImg {
+  width: 100%;
+  object-fit: contain;
+}
+.aboutUs h3 {
+  color: var(--subcolor);
+  font-weight: 600;
+}
+.aboutUs p {
+  font-size: 0.9rem;
+}
+.aboutOption {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(20px, auto);
+}
+.aboutOption p {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.aboutOption i {
+  color: var(--subcolor);
+  margin-right: 10px;
+}
+.latest {
+  background-image: url("../images/latest.png");
+  background-color: rgb(132, 195, 251);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0px;
+  position: relative;
+}
+.latest h2 {
+  color: #fff;
+}
+.swiper {
+  width: 950px;
+}
+.card {
+  position: relative;
+  background-color: #fff;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+section .card .image {
+  height: 200px;
+  width: 100%;
+}
+section .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 20px;
+}
+.card-text h6 {
+  font-weight: 600;
+}
+.card-text p {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-profession .profession {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.card .rating i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: #ff676d;
+}
+
+.card .button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.swiper-pagination {
+  position: absolute;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.7;
+  color: #000;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+.wedoCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wedoCard img {
+  width: 100px;
+  margin-bottom: 30px;
+}
+.contact {
+  background-image: url("../images/contact1.jpg");
+  background-color: rgb(132, 195, 251);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--maincolor);
+}
+.contact h4 {
+  font-size: 1.3rem;
+}
+.contact p {
+  font-size: 0.7rem;
+}
+.contactInfo {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px 50px;
+}
+.contactForm {
+  padding: 30px 50px;
+}
+.contactForm h2 {
+  text-align: left;
+}
+.contactForm form {
+  width: 60%;
+}
+.input-control {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.input-control i {
+  color: rgb(146, 144, 144);
+  position: absolute;
+  left: 8px;
+  top: 12px;
+}
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 2px;
+  padding-left: 28px;
+}
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+}
+.contactForm input {
+  height: 40px;
+}
+.contactForm button {
+  background-color: transparent;
+  border: 2px solid var(--maincolor);
+  color: var(--maincolor);
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  width: 150px;
+}
+footer {
+  background-color: #000;
+  color: var(--maincolor);
+  font-size: 0.8rem;
+  padding: 10px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  margin-bottom: 0px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0px;
+}
+footer li {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+footer a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+}
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 0 50px;
+  }
+  .aboutUs h3 {
+    margin-top: 20px;
+  }
+  .wedoCard h5 {
+    text-align: center;
+  }
+  .contactInfo {
+    padding: 20px;
+  }
+  .contactForm {
+    padding: 20px;
+  }
+  .contactForm form {
+    width: 100% !important;
+  }
+  footer {
+    flex-direction: column;
+    padding: 10px 30px;
+  }
+  footer p {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  footer {
+    padding: 10px;
+  }
+}
